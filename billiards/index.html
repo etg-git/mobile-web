@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>billiards</title>
+</head>
+<body>
+<style>
+    #myProgress {
+        float: left;
+        position: relative;
+        width: 30%;
+        height: 30px;
+        background-color: #ddd;
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    #hit_button {
+        height: 30px;
+        float: left;
+    }
+
+    #myBar {
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background-color: #4CAF50;
+    }
+
+    #label {
+        text-align: center;
+        line-height: 30px;
+        color: white;
+    }
+</style>
+<canvas id="myCanvas" width="1200" height="670" style="border:1px solid #000000;"></canvas>
+
+<div id="myProgress">
+    <div id="myBar">
+        <div id="label">0%</div>
+    </div>
+</div>
+<br>
+<button id="hit_button" style="width :100pt;">HIT BALL</button>
+
+<script src="billiards.js"></script>
+<script src="draw.js"></script>
+<script src="event.js"></script>
+
+</body>
+</html>
